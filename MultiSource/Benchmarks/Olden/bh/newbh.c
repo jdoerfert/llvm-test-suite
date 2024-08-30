@@ -297,6 +297,8 @@ void stepsystem(treeptr t, int nstep) {
 
   /*chatting("Tree freed\n");*/
 
+  // JD: It's UB to pass a undefined value, even if it's not used.
+  bt = 0;
   root = maketree(bt, nbody, t, nstep, 0);
   /*chatting("Done maketree\n");*/
   /*BhDebug = 0;*/

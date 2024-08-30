@@ -20,7 +20,7 @@ int main( int argc, char* argv[] )
 	unsigned long seed;
 	double omp_start = 0.0, omp_end = 0.0, p_energy;
 	unsigned long long vhash = 0;
-	int nprocs;
+	int nprocs = 1;
 
 	#ifdef MPI
 	MPI_Status stat;
